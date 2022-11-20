@@ -4,37 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Ice Hockey twist on Rock, Paper, Scissors">
+    <meta name="keywords" content="ice hockey, game, rock, paper, scissors, fun">
 
     <!-- Font Awesome and Google Fonts -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Raleway:wght@300&display=swap'">
     
     <!-- CSS Link-->
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <title></title>
+    <title>Stick, Net, Puck</title>
 </head>
+
 <body>
     <!-- Headings -->
-    <h1 class="heading"></h1>
-    <h2 class="heading">A Ice Hockey Twist On A Classic Game</h2>
+
+    <h1 class="heading">Stick, Net, Puck</h1>
+    <h2 class="heading">An Ice Hockey Twist On A Classic Game</h2>
 
     <!-- Infomation -->
 
     <p id="rules">
-
+        “Stick, Net, Puck” is an Ice Hockey twist on the classic game "Rock, Paper, Scissors". <br>
+        Just like in the classic game one option beats another but of course, it has an Ice Hockey twist. <br>
+        In "Stick, Net, Puck":
+        <ul>
+            <li>Stick stops Puck</li>
+            <li>Puck scores in Net</li>
+            <li>Net Breaks Stick</li>
+        </ul>
+        The rules for “Stick, Net, Puck" couldn’t be simpler:
+        <ul>
+            <li>It’s the Red team (You) Vs. the Blue team (The Computer) in the first to 5 goals game.</li>
+            <li>Each team will pick a piece of equipment (Stick, Net or Puck) in a Faceoff with whoever wins the Faceoff scoring a goal.</li>
+            <li>If the Faceoff is a tie (You and The Computer both pick the same piece of equipment) then no goals are scored and the Faceoff happens again with both teams picking new equipment.</li>
+            <li>When one team manages to score 5 goals they are THE WINNERS.</li>
+        </ul>
+	That’s all there is to it, now go score some goals and enjoy.
     </p>
 
     <!-- Game Area-->
-    <div id="options">
 
-    </div>
+    <div id="game-area">
+    
+    <!-- Game Input Options -->
 
-    <div id="results">
+        <div id="options">
+            <button>
+                <img src="assets/images/hockey_stick.png" alt="Hockey Stick">
+            </button>
+            <button>
+                <img src="assets/images/hockey-goal.png" alt="Hockey Net">
+            </button>
+            <button>
+                <img src="assets/images/hockey_puck.png" alt="Hockey Puck">
+            </button>
 
-    </div>
+        </div>
 
-    <div id="scores">
+    <!-- Game Result -->
 
+        <div id="results">
+
+        </div>
+
+    <!-- Current Score -->
+
+        <div id="scores">
+            <p class="red_team">Red Team <span id="red_score">0</span></p>
+            <p class="blue_team">Blue Team <span id="blue_score">0</span></p>
+        </div>
+    
     </div>
 
     <!-- JavaScript Link-->
