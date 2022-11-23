@@ -107,7 +107,7 @@ function endGame() {
       resultMessage.innerHTML = 'RED TEAM WINS';
       resultMessage.style.color = '#940000';
    } else if (blueScore === 5) {
-      resultMessage.innerHTML = 'BLUE TEAM WINS'
+      resultMessage.innerHTML = 'BLUE TEAM WINS';
       resultMessage.style.color = 'blue';
    }
 }
@@ -118,7 +118,7 @@ function endGame() {
 
 document.getElementById('reset-btn').addEventListener('click', function() {
 
-   gameReset()
+   gameReset();
 
 });
 
@@ -132,5 +132,5 @@ function gameReset() {
    blueScoreSpan.innerText = '0';
    resultMessage.innerText = 'LET THE GAME BEGIN';
    resultMessage.style.css = 'black';
-   
+
 }

@@ -140,6 +140,10 @@ body {
         margin-top: 20%;
     }
 
+    #reset-btn {
+        width: 60%;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -169,4 +173,10 @@ body {
         margin-left: 15%;
     }
     
+    #reset-btn {
+        height: 75px;
+        width: 105%;
+        font-size: small;
+        margin-left: 5%;
+    }
 }
