@@ -2,7 +2,7 @@
  * Declare constants for DOM and possible choices
  */
 
-const buttons = document.getElementsByClassName('btn');
+const buttons = document.getElementsByClassName('choice-btn');
 let redScoreSpan = document.getElementById('red-score');
 let blueScoreSpan = document.getElementById('blue-score');
 
@@ -33,7 +33,7 @@ function playGame(redChoice) {
     result();
     endGame();
 
-};
+}
 
 /**
  * Checking result of game
@@ -104,13 +104,15 @@ function endGame() {
    let blueScore = parseInt(document.getElementById('blue-score').innerText);
 
    if (redScore === 5) {
-      resultMessage.innerHTML = 'RED TEAM WINS';
-      resultMessage.style.color = '#940000';
+      alert('RED TEAM WINS, HOW ABOUT ANOTHER GAME?');
+      gameReset();
+
    } else if (blueScore === 5) {
-      resultMessage.innerHTML = 'BLUE TEAM WINS';
-      resultMessage.style.color = 'blue';
-   }
+      alert ('BLUE TEAM WINS, HOW ABOUT ANOTHER GAME?');
+      gameReset();
+   };
 }
+
 
 /**
  * Event Listener for game reset
@@ -131,6 +133,8 @@ function gameReset() {
    redScoreSpan.innerText = '0';
    blueScoreSpan.innerText = '0';
    resultMessage.innerText = 'LET THE GAME BEGIN';
-   resultMessage.style.css = 'black';
+   resultMessage.style.color = 'black';
+   let btnChoice = document.getElementsByClassName("choice-btn");
+   btnChoice.disabled = false;
 
 }

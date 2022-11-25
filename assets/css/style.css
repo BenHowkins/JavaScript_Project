@@ -36,7 +36,7 @@ body {
     margin-bottom: 20px;
 }
 
-.btn {
+.choice-btn {
     width: 31%;
     height: 250px;
     float: left;
@@ -122,14 +122,14 @@ body {
 
 @media (max-width: 1350px) {
     
-    .btn {
+    .choice-btn {
         width: 30%;
     }
 }
 
 @media (max-width: 768px) {
 
-    .btn {
+    .choice-btn {
         width: 30%;
         height: 200px;
         float: left;
@@ -152,7 +152,7 @@ body {
         height: 150px;
     }
 
-    .btn {
+    .choice-btn {
         width: 25%;
         height: 100px;
     }
