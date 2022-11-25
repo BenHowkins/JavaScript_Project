@@ -2,7 +2,7 @@
  * Declare constants for DOM and possible choices
  */
 
-const buttons = document.getElementsByClassName('choice-btn');
+const buttons = document.getElementsByClassName('btn');
 let redScoreSpan = document.getElementById('red-score');
 let blueScoreSpan = document.getElementById('blue-score');
 
