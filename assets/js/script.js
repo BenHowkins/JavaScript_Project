@@ -110,7 +110,7 @@ function endGame() {
    } else if (blueScore === 5) {
       alert ('BLUE TEAM WINS, HOW ABOUT ANOTHER GAME?');
       gameReset();
-   };
+   }
 }
 
 
@@ -134,7 +134,5 @@ function gameReset() {
    blueScoreSpan.innerText = '0';
    resultMessage.innerText = 'LET THE GAME BEGIN';
    resultMessage.style.color = 'black';
-   let btnChoice = document.getElementsByClassName("choice-btn");
-   btnChoice.disabled = false;
 
 }
