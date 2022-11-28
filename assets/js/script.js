@@ -37,47 +37,96 @@ function playGame(redChoice) {
 
 /**
  * Checking result of game
+ * 0 = Stick
+ * 1 = Net
+ * 2 = Puck 
  */
 
 function result() {
     if (redChoice == '0' && blueChoice == '2') {
-        resultMessage.innerHTML = "RED GOAL";
+        resultMessage.innerText = `Red Team: STICK
+        Vs.
+        Blue Team: PUCK
+
+        RED GOAL`;
         resultMessage.style.color = '#940000';
         increaseRedScoreSpan();
      }
      else if (redChoice == '0' && blueChoice == '1') {
-        resultMessage.innerHTML = "BLUE GOAL";
+        resultMessage.innerText = `Red Team: STICK
+        Vs.
+        Blue Team: NET
+        
+        BLUE GOAL`;
         resultMessage.style.color = 'blue';
         increaseBlueScoreSpan();
      }
      else if (redChoice == '1' && blueChoice == '0') {
-        resultMessage.innerHTML = "RED GOAL";
+        resultMessage.innerText = `Red Team: NET
+        Vs.
+        Blue Team: STICK
+        
+        RED GOAL`;
         resultMessage.style.color = '#940000';
         increaseRedScoreSpan();
      }     
      else if (redChoice == '1' && blueChoice == '2') {
-        resultMessage.innerHTML = "BLUE GOAL";
+        resultMessage.innerText = `Red Team: NET
+        Vs.
+        Blue Team: PUCK
+        
+        BLUE GOAL`;
         resultMessage.style.color = 'blue';
         increaseBlueScoreSpan();
      }
      else if (redChoice == '2' && blueChoice == '1') {
-        resultMessage.innerHTML = "RED GOAL";
+        resultMessage.innerText = `Red Team: PUCK
+        Vs.
+        Blue Team: NET
+        
+        RED GOAL`;
         resultMessage.style.color = '#940000';
         increaseRedScoreSpan();
      } 
      else if (redChoice == '2' && blueChoice == '0') {
-        resultMessage.innerHTML = "BLUE GOAL";
+        resultMessage.innerText = `Red Team: PUCK
+        Vs.
+        Blue Team: STICK
+        
+        BLUE GOAL`;
         resultMessage.style.color = 'blue';
         increaseBlueScoreSpan();
      } 
-     else {
-        resultMessage.innerHTML = "DRAW";
-        resultMessage.style.color = 'black';
-     }
+      else if (redChoice == '0' && blueChoice == '0') {
+         resultMessage.innerText = `Red Team: STICK
+         Vs.
+         Blue Team: STICK
+         
+         DRAW`;
+         resultMessage.style.color = 'black';
+      }
+      else if (redChoice == '1' && blueChoice == '1') {
+         resultMessage.innerText = `Red Team: NET
+         Vs.
+         Blue Team: NET
+         
+         DRAW`;
+         resultMessage.style.color = 'black';
+      }
+      else{
+         resultMessage.innerText = `Red Team: PUCK
+         Vs.
+         Blue Team: PUCK
+         
+         DRAW`;
+         resultMessage.style.color = 'black';
+      }
 }
 
 /**
  * Increase scores based on the result of the game
+ * If player wins red score increases,
+ * computer wins blue score increases
  */
 
 function increaseRedScoreSpan() {
@@ -96,6 +145,8 @@ function increaseBlueScoreSpan() {
 
 /**
  * End game function for when one team scores 5 goals
+ * Listens to see if a team has 5 points and gives an alert
+ * saying the winner and sets the game back to 0-0
  */
 
 function endGame() {
