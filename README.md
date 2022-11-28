@@ -55,10 +55,16 @@ This is a "Rock, Paper, Scissors" style JavaScript game using Ice Hockey equipme
 1
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/#textarea)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator)
+
+The JSHint service was used to see if there was any errors in the JavaScript.
+
+-   [JSHints](https://jshint.com/)
+
+Upon using the service I received no error messages. I received 13 warnings but 12 of these warnings were the same warning, stating that keywords "let", "const" and "for of" which I used to define variables were only available on some versions of certain browswers. The last warning I recieved was for line 19 of my JavaScript and stated that "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". However as this line is the event listener for the players selection, it's value depends on which button they push, so can't be a fixed variable and can safely be called by this method. 
 
 ### Testing User Stories from User Experience (UX) Section
 
