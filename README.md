@@ -107,9 +107,11 @@ The JSHint service was used to see if there was any errors in the JavaScript.
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to be a quickly and easily start a new game whenever I start the page.
+    1. As a Returning Visitor, I want to be able to quickly and easily start a new game whenever I start the page.
 
-        1. 
+        1. The design of the page is setup so that upon loading, the game is ready to play by default. All the player needs to do is scroll to the "Game" area and select their first choice.
+        <img src = "assets/images/laptop_game.png">
+        <img src = "assets/images/game_winner.png">
 
 
 ### Further Testing
