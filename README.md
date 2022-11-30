@@ -4,6 +4,12 @@
 
 This is a "Rock, Paper, Scissors" style JavaScript game using Ice Hockey equipment. It's designed to be playable on multiple devices of different sizes.
 
+<img src="assets/images/laptop_rules.png">
+<img src="assets/images/laptop_game.png">
+<img src="assets/images/tablet_rules.png">
+<img src="assets/images/tablet_game.png">
+<img src="assets/images/phone_rules.png">
+<img src="assets/images/phone_game.png">
 
 
 ## User Experience (UX)
@@ -63,8 +69,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 The JSHint service was used to see if there was any errors in the JavaScript.
 
 -   [JSHints](https://jshint.com/)
+<img src = "assets/images/jshints_result.png">
 
-Upon using the service I received no error messages. I received 13 warnings but 12 of these warnings were the same warning, stating that keywords "let", "const" and "for of" which I used to define variables were only available on some versions of certain browswers. The last warning I recieved was for line 19 of my JavaScript and stated that "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". However as this line is the event listener for the players selection, it's value depends on which button they push, so can't be a fixed variable and can safely be called by this method. 
+-  Upon using the service I received no error messages. I received 22 warnings.
+-  12 of these warnings were the same warning, stating that keywords "let", "const" and "for of" which I used to define variables were only available on some versions of certain browswers.
+-  9 of these warnings were the same warning, stating that "template literal syntax" which I used to write the results to the "Results Message" box were only available on some versions of certain browswers.
+-  The last warning I recieved was for line 19 of my JavaScript and stated that "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". However as this line is the event listener for the players selection, it's value depends on which button they push, so can't be a fixed variable and can safely be called by this method. 
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -72,24 +82,34 @@ Upon using the service I received no error messages. I received 13 warnings but 
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and how to use it properly.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. When the site loads the first thing that is seen by the visitor is the name of the game and a short description of the game.
+        2. The first block of text is a brief summary of the game and it's rules.
+        <img src = "assets/images/laptop_rules.png">
+        3. This "Rules" area is in a bordered container with a colored background so it stands out to the visitor as important.
 
     2. As a First Time Visitor, I want to be able to easily start playing the game once I've read and understood the rules.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+        1. Underneath the "Rules" area there is another bordered, colored area containing all of the elements of the game.
+        <img src = "assets/images/laptop_game.png">
+        2. At the top of the "Game" area is three pictures, one representing each of the available choices outlined in the "Rules".
+        3. When the player makes their choice and clicks on one of the pictures the game will begin.
+        <img src = "assets/images/game_winner.png">
 
     3. As a First Time Visitor, I want to be able to know the scores and when I have either won or lost.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+        
+        1. Upon selecting your choice, a message will appear in the "Results Message" box in the "Game" area stating both the Red and Blue teams choices as well as the result of the match-up.
+        <img src = "assets/images/game_winner.png">
+        <img src = "assets/images/game_draw.png">
+        2. Depending on the result either the Red or Blue team's score span will increase or if the matchup is a draw neither will increase.
+        <img src = "assets/images/game_winner.png">
+        3. Upon a team recieveing 5 "Goals" an alert will appear stating the winner and resets the game back to it's default to start the process again.
+        <img src = "assets/images/match_winner.png">
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
+    1. As a Returning Visitor, I want to be a quickly and easily start a new game whenever I start the page.
+
+        1. 
 
 
 ### Further Testing
