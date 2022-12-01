@@ -63,8 +63,10 @@ This is a "Rock, Paper, Scissors" style JavaScript game using Ice Hockey equipme
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/#textarea)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbenhowkins.github.io%2FJavaScript_Project%2F)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbenhowkins.github.io%2FJavaScript_Project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+-  The Markup Validator came back with no errors but the CSS Validator comes back with one error. However the error risen isn't to do with the CSS code but is actually a Java error with the Google Font's API, which is out of my control and the actual CSS code itself comes back with no errors.
 
 The JSHint service was used to see if there was any errors in the JavaScript.
 
@@ -120,6 +122,7 @@ The JSHint service was used to see if there was any errors in the JavaScript.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Kindle Fire Tablets, iPhone 12 and Huawei Pro30.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
 
 ### Issues Arose During Testing
 
