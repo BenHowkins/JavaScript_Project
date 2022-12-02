@@ -16,7 +16,7 @@ This is a "Rock, Paper, Scissors" style JavaScript game using Ice Hockey equipme
 
 -   ### User stories
 
-    -   #### First Time Visitor Goals
+    -   #### First-Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site and how to use it properly.
         2. As a First Time Visitor, I want to be able to easily start playing the game once I've read and understood the rules.
@@ -24,17 +24,17 @@ This is a "Rock, Paper, Scissors" style JavaScript game using Ice Hockey equipme
 
     -   #### Returning and Frequent Visitor Goals
 
-        1. As a Returning Visitor, I want to be a quickly and easily start a new game whenever I start the page.
+        1. As a Returning Visitor, I want to be able to quickly and easily start a new game whenever I start the page.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The main colours used for the text are Charcoal Grey and Light Blue. This is because they are both are related to Ice Hockey as Charcoal Grey is very similar to the color of a puck and the Light Blue is similar to the Blue lines on the rink.
-        -   The background for the "Rules" and "Game" areas of the page is a Light Grey color. This is color is used as it doesn't clash with the Charcoal Grey of the text and it also helps to emphosize these two important areas of the page.
-        -   There is a Dark Red and Blue color used for the background of each team's score counter as well as their text in the "Results Box" when they "score". 
+        -   The main colours used for the text are Charcoal Grey and Light Blue. This is because they are both related to Ice Hockey as Charcoal Grey is very similar to the colour of a puck and the Light Blue is similar to the Blue lines on the rink.
+        -   The background for the "Rules" and "Game" areas of the page is a Light Grey colour. This is colour is used as it doesn't clash with the Charcoal Grey of the text and it also helps to emphasise these two important areas of the page.
+        -   There is a Dark Red and Blue colour used for the background of each team's score counter as well as their text in the "Results Box" when they "score". 
     -   #### Typography
-        -   The Raleway font is the main font used for Text in website and Abyssinica SIL used for the Headings. They also have Sans Serif and Serif respectively as their fallback fonts in case for any reason they aren't imported into the site correctly. I used these as they are clean fonts I have used before, so I feel they are both attractive and appropriate.
+        -   The Raleway font is the main font used for the Text on the website and Abyssinica SIL is used for the Headings. They also have Sans Serif and Serif respectively as their fallback fonts in the case for any reason they aren't imported into the site correctly. I used these as they are clean fonts I have used before, so I feel they are both attractive and appropriate.
     -   #### Imagery
-        -   Imagery is important. There are three main images on the page: A Hockey Stick, A Hockey Net and A Hockey Puck. These are used to illistrate the choices available to they player as well as the buttons to play the game with.
+        -   Imagery is important. There are three main images on the page: A Hockey Stick, A Hockey Net and A Hockey Puck. These are used to illustrate the choices available to the player as well as the buttons to play the game with.
 
 ## Features
 
@@ -66,32 +66,32 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbenhowkins.github.io%2FJavaScript_Project%2F)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbenhowkins.github.io%2FJavaScript_Project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
--  The Markup Validator came back with no errors but the CSS Validator comes back with one error. However the error risen isn't to do with the CSS code but is actually a Java error with the Google Font's API, which is out of my control and the actual CSS code itself comes back with no errors.
+-  The Markup Validator came back with no errors but the CSS Validator comes back with one error. However, the error rose isn't to do with the CSS code but is actually a Java error with the Google Font's API, which is out of my control and the actual CSS code itself comes back with no errors.
 
-The JSHint service was used to see if there was any errors in the JavaScript.
+The JSHint service was used to see if there were any errors in the JavaScript code.
 
 -   [JSHints](https://jshint.com/)
 <img src = "assets/images/jshints_result.png">
 
 -  Upon using the service I received no error messages. I received 22 warnings.
--  12 of these warnings were the same warning, stating that keywords "let", "const" and "for of" which I used to define variables were only available on some versions of certain browswers.
--  9 of these warnings were the same warning, stating that "template literal syntax" which I used to write the results to the "Results Message" box were only available on some versions of certain browswers.
--  The last warning I recieved was for line 19 of my JavaScript and stated that "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". However as this line is the event listener for the players selection, it's value depends on which button they push, so can't be a fixed variable and can safely be called by this method. 
+-  12 of these warnings were the same warning, stating that keywords "let", "const" and "for of" which I used to define variables were only available on some versions of certain browsers.
+-  9 of these warnings were the same warning, stating that "template literal syntax" which I used to write the results to the "Results Message" box was only available on some versions of certain browsers.
+-  The last warning I received was for line 19 of my JavaScript which stated that "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics". However as this line is the event listener for the player's selection, its value depends on which button they push, so can't be a fixed variable and can safely be called by this method. 
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals
+-   #### First-Time Visitor Goals
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and how to use it properly.
 
         1. When the site loads the first thing that is seen by the visitor is the name of the game and a short description of the game.
-        2. The first block of text is a brief summary of the game and it's rules.
+        2. The first block of text is a summary of the game and its rules.
         <img src = "assets/images/laptop_rules.png">
-        3. This "Rules" area is in a bordered container with a colored background so it stands out to the visitor as important.
+        3. This "Rules" area is in a bordered container with a coloured background so it stands out to the visitor as important.
 
     2. As a First Time Visitor, I want to be able to easily start playing the game once I've read and understood the rules.
 
-        1. Underneath the "Rules" area there is another bordered, colored area containing all of the elements of the game.
+        1. Underneath the "Rules" area there is another bordered, coloured area containing all of the elements of the game.
         <img src = "assets/images/laptop_game.png">
         2. At the top of the "Game" area is three pictures, one representing each of the available choices outlined in the "Rules".
         3. When the player makes their choice and clicks on one of the pictures the game will begin.
@@ -99,19 +99,19 @@ The JSHint service was used to see if there was any errors in the JavaScript.
 
     3. As a First Time Visitor, I want to be able to know the scores and when I have either won or lost.
         
-        1. Upon selecting your choice, a message will appear in the "Results Message" box in the "Game" area stating both the Red and Blue teams choices as well as the result of the match-up.
+        1. Upon selecting your choice, a message will appear in the "Results Message" box in the "Game" area stating both the Red and Blue team's choices as well as the result of the match-up.
         <img src = "assets/images/game_winner.png">
         <img src = "assets/images/game_draw.png">
         2. Depending on the result either the Red or Blue team's score span will increase or if the matchup is a draw neither will increase.
         <img src = "assets/images/game_winner.png">
-        3. Upon a team recieveing 5 "Goals" an alert will appear stating the winner and resets the game back to it's default to start the process again.
+        3. Upon a team receiving 5 "Goals" an alert will appear stating the winner and resets the game back to its default to start the process again.
         <img src = "assets/images/match_winner.png">
 
 -   #### Returning Visitor Goals
 
     1. As a Returning Visitor, I want to be able to quickly and easily start a new game whenever I start the page.
 
-        1. The design of the page is setup so that upon loading, the game is ready to play by default. All the player needs to do is scroll to the "Game" area and select their first choice.
+        1. The design of the page is set up so that upon loading, the game is ready to play by default. All the player needs to do is scroll to the "Game" area and select their first choice.
         <img src = "assets/images/laptop_game.png">
         <img src = "assets/images/game_winner.png">
 
@@ -126,8 +126,8 @@ The JSHint service was used to see if there was any errors in the JavaScript.
 
 ### Issues Arose During Testing
 
--   The "Game Results" message upon pushing the "Restart Game" button wouldn't revert back to it's original black text and instead would stay the same color as the last team to score and would require a second press of the button to reset completely. This issue was corrected when adding the alert message when the game is won and automatically resetting the game after the message is closed instead of having the player manually do it themselves.
--   When the a team scores 5 points and the game is won a message would appear in the "Game Results" message box say which team had won but it was possible to continue the game after this point. This was fixed by having an alert message pop up instead of the message in the "Game Results" box and having an automatic reset when the alert closes.
+-   The "Game Results" message upon pushing the "Restart Game" button wouldn't revert to its original black text and instead would stay the same colour as the last team to score and would require a second press of the button to reset completely. This issue was corrected when adding the alert message when the game is won and automatically resetting the game after the message is closed instead of having the player manually do it themselves.
+-   When a team scores 5 points and the game is won a message would appear in the "Game Results" message box saying which team had won but it was possible to continue the game after this point. This was fixed by having an alert message pop up instead of the message in the "Game Results" box and having an automatic reset when the alert closes.
 
 ## Deployment
 
